@@ -1,4 +1,4 @@
-{% set version = "0.0.12" %}
+{% set version = "0.0.12.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/inspectdf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/inspectdf/inspectdf_{{ version }}.tar.gz
-  sha256: 93d601644231756e25b62f5348d7a39ab75a4a2e7cd9943108eceeebe4d72dcd
+  sha256: 356ff9b5dc2ba80e53fd961bf1b252dba8eee0fd6fd25b46b4d3351b382a7c29
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
